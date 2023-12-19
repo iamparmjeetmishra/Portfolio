@@ -15,6 +15,9 @@ import WorksIcon from './icons/WorksIcon'
 import BlogsIcon from './icons/BlogsIcon'
 import ContactIcon from './icons/ContactIcon'
 import CodeIcon from './icons/CodeIcon'
+import PerformanceIcon from './icons/PerformanceIcon'
+import BarIcon from './icons/BarIcon'
+import CrossIcon from './icons/CrossIcon'
 
 export {
     Sun,
@@ -33,5 +36,8 @@ export {
     BlogsIcon,
     ContactIcon,
     CodeIcon,
+    PerformanceIcon,
+    BarIcon,
+    CrossIcon,
     Profile
 }

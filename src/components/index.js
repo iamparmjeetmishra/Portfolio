@@ -9,6 +9,7 @@ import SocialBtn from './ui/SocialBtn.jsx'
 import InfoBox from './ui/InfoBox.jsx'
 import Footer from './Footer.jsx'
 import NavA from './ui/NavA.jsx'
+import SkillBtn from './ui/SkillBtn.jsx'
 
 export {
     Button,
@@ -22,4 +23,5 @@ export {
     InfoBox,
     Footer,
     NavA,
+    SkillBtn
 }

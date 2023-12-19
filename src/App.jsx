@@ -11,7 +11,7 @@ const App = () => {
           <Sidebar />
         </div>
         <div className='col-span-12 lg:col-span-8 '>
-          <div className='px-12 py-12 sm:px-5 md:px-10 lg:px-14 lg:rounded-2xl bg-white dark:bg-[#111111]'>
+          <div className='px-12 py-12 sm:px-5 md:px-10 lg:px-14 rounded-2xl bg-white dark:bg-[#111111]'>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/resume' element={<Resume />} />

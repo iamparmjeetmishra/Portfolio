@@ -7,8 +7,8 @@ const AboutBox = ({icon, title, text, iconColor}) => {
         {icon}
       </div>
       <div className="space-y-2 break-all">
-        <h3 className="dark:text-white text-xl font-semibold">{title}</h3>
-        <p className="leading-8 text-gray-200 dark:text-slate-300">{ text }</p>
+        <h3 className="dark:text-white break-normal text-xl font-semibold">{title}</h3>
+        <p className="leading-8 break-normal text-gray-200 dark:text-slate-300">{ text }</p>
       </div>
 
     </div>
