@@ -43,7 +43,7 @@ const header = () => {
             {
                 toggleMenu && (
                     <div className="relative z-10 w-full h-full">
-                            <div className="absolute left-0 right-0 px-2 py-4 dark:bg-[#212425] rounded-b-md ">
+                            <div className="absolute left-0 right-0 px-2 py-4 dark:bg-[#212425] rounded-xl ">
                                 <Nav />
                             </div>
                     </div>
