@@ -1,7 +1,7 @@
 import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Label, Input } from '../index'
+import { Label, Input } from '../../components'
 import { NameIcon, EmailIcon } from '../../media'
 
 const schema = z.object({
@@ -30,13 +30,13 @@ const Form = () => {
           <Input type="text" id="name" placeholder="Enter your name" />
         </div>
         <Label htmlFor="email" title="Your Email" />
-        <div className="relative mb-2">
+        <div className="relative mb-4">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
             <EmailIcon className="w-5" />
           </div>
           <Input type="email" id="email" placeholder="Enter your email" />
         </div>
-        <button type='submit' className=''>Submit</button>
+        <button type='submit' className='px-4 py-2 flex bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color'>Submit</button>
       </form>
 
     </>
