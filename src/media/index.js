@@ -18,6 +18,8 @@ import CodeIcon from './icons/CodeIcon'
 import PerformanceIcon from './icons/PerformanceIcon'
 import BarIcon from './icons/BarIcon'
 import CrossIcon from './icons/CrossIcon'
+import EmailIcon from './icons/EmailIcon'
+import NameIcon from './icons/NameIcon'
 
 export {
     Sun,
@@ -39,5 +41,7 @@ export {
     PerformanceIcon,
     BarIcon,
     CrossIcon,
+    EmailIcon,
+    NameIcon,
     Profile
 }

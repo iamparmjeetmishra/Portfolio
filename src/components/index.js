@@ -10,6 +10,8 @@ import InfoBox from './ui/InfoBox.jsx'
 import Footer from './Footer.jsx'
 import NavA from './ui/NavA.jsx'
 import SkillBtn from './ui/SkillBtn.jsx'
+import Label from './ui/label.jsx'
+import Input from './ui/Input.jsx'
 
 export {
     Button,
@@ -23,5 +25,7 @@ export {
     InfoBox,
     Footer,
     NavA,
-    SkillBtn
+    SkillBtn,
+    Label,
+    Input,
 }
