@@ -47,7 +47,9 @@ const Sidebar = () => {
                     color='text-[#6AB5B9]'
                 />
             </div>
-            <a href={info.cvLink} target='_blank' rel='noopener noreferrer' className='inline-flex gap-2 items-center flex-nowrap mx-auto bg-gradient-to-r from-twOg-100 to-twOg-200 duration-200 transition ease-linear hover:bg-gradient-to-l from-twOg-200 to-twOg-100 px-8 py-3 text-lg text-white rounded-full mt-6  '>
+            <a
+                href={info.cvLink} target='_blank' rel='noopener noreferrer' className='inline-flex gap-2 items-center flex-nowrap mx-auto bg-neutral-800/90 duration-200 transition ease-linear hover:bg-gradient-to-l from-twOg-200 to-twOg-100 px-8 py-3 text-lg text-white rounded-full mt-6  '
+            >
                 <span className='w-8'>
                     <Download />
                 </span>

@@ -18,8 +18,11 @@ import CodeIcon from './icons/CodeIcon'
 import PerformanceIcon from './icons/PerformanceIcon'
 import BarIcon from './icons/BarIcon'
 import CrossIcon from './icons/CrossIcon'
+import EmailIcon from './icons/EmailIcon'
+import NameIcon from './icons/NameIcon'
+import TextAreaIcon from './icons/TextAreaIcon'
 
-export {
+export  {
     Sun,
     Moon,
     Twitter,
@@ -39,5 +42,8 @@ export {
     PerformanceIcon,
     BarIcon,
     CrossIcon,
+    EmailIcon,
+    NameIcon,
+    TextAreaIcon,
     Profile
 }
