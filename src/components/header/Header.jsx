@@ -9,7 +9,7 @@ const header = () => {
 
     return (
         <>
-            <header className="container w-full flex items-center dark:bg-[#1a1a1a]  justify-between p-3  mt-4 sm:rounded-xl ">
+            <header className="container w-full flex items-center dark:bg-[#111111]  justify-between p-3  mt-4 sm:rounded-xl ">
                 <div className="w-full flex justify-between px-4">
                     <NavLink to="/" >
                         <div className="flex items-center gap-3 ">
