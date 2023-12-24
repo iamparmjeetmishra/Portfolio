@@ -10,7 +10,7 @@ const App = () => {
         <div className="col-span-12 grid lg:col-span-4 lg:h-screen lg:sticky top-44">
           <Sidebar />
         </div>
-        <div className='col-span-12 lg:col-span-8 '>
+        <div className='col-span-12  lg:col-span-8 '>
           <div className='px-12 py-12 sm:px-5 md:px-10 lg:px-14 rounded-2xl bg-white dark:bg-[#111111]'>
             <Routes>
               <Route path='/' element={<Home />} />
