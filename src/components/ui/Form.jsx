@@ -2,8 +2,7 @@ import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { NameIcon, EmailIcon, TextAreaIcon } from '../../media'
-import { Axios } from 'axios'
-import Email from '../../api/email'
+import SendEmail from '../../api/SendEmail'
 
 
 const schema = z.object({
@@ -13,22 +12,14 @@ const schema = z.object({
 })
 
 const Form = () => {
-  
-
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: zodResolver(schema),
   })
 
-  const submitData = async (data) => {
+  const submitData =  (data) => {
     console.log(data)
-    
-    Axios.post(Email(), {
-      name: data.name,
-      email: data.email,
-      message: data.message
-    })
-    
+    SendEmail(data)
   }
 
   return (
