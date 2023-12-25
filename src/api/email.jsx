@@ -1,9 +1,9 @@
 import { Resend } from 'resend'
-import {process} from 'process'
+let process = Node.process
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-    (async function Email() {
+const sendEmail = async () => {
         try {
             const data = await resend.emails.send({
                 from: 'info@parmjeetmishra.com',
@@ -15,6 +15,6 @@ const resend = new Resend(process.env.RESEND_API_KEY)
         } catch (err) {
             console.log(`error from email file: ${err}`)
         }
-    })();
+}
 
-export default Email;
+export default sendEmail;

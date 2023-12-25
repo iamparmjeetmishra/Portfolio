@@ -2,6 +2,9 @@ import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { NameIcon, EmailIcon, TextAreaIcon } from '../../media'
+import { Axios } from 'axios'
+import Email from '../../api/email'
+
 
 const schema = z.object({
   name: z.string().min(1, { message: 'Required at least 2 characters' }),
@@ -10,6 +13,8 @@ const schema = z.object({
 })
 
 const Form = () => {
+  
+
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: zodResolver(schema),
@@ -17,18 +22,13 @@ const Form = () => {
 
   const submitData = async (data) => {
     console.log(data)
-    await fetch('/src/api/email.jsx', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        fullName: data.name,
-        email: data.email,
-        message: data.message
-      })
+    
+    Axios.post(Email(), {
+      name: data.name,
+      email: data.email,
+      message: data.message
     })
-    // Handle response and errors as necessary
+    
   }
 
   return (
