@@ -32,7 +32,7 @@ const header = () => {
                 <div className="p-4 ml-auto rounded-lg hidden lg:block bg-white dark:bg-[#111111]">
                     <Nav />
                 </div>
-                <button onClick={() => setToggleMenu(!toggleMenu)} className="lg:invisible visible opacity-100 bg-[#ef4060] w-12 h-10 rounded-full flex justify-center cursor-pointer items-center text-white dark:text-white ">
+                <button onClick={() => setToggleMenu(!toggleMenu)} className="lg:invisible visible opacity-100 bg-[#ef4060] w-12 h-12 rounded-full flex justify-center cursor-pointer items-center text-white dark:text-white ">
                     {toggleMenu
                         ? <CrossIcon onClick={() => setToggleMenu(true)} />
                         : <BarIcon onClick={() => setToggleMenu(false)} />

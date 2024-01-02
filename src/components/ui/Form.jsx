@@ -2,7 +2,7 @@ import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { NameIcon, EmailIcon, TextAreaIcon } from '../../media'
-import SendEmail from '../../api/SendEmail'
+
 
 
 const schema = z.object({
@@ -17,9 +17,9 @@ const Form = () => {
     resolver: zodResolver(schema),
   })
 
-  const submitData =  (data) => {
+  const submitData = async(data) => {
     console.log(data)
-    SendEmail(data)
+   
   }
 
   return (
